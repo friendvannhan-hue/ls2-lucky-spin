@@ -13,16 +13,19 @@
   <style>:root{--bg:#101010;--surface:#181818;--red:#e21d2a;--white:#f8f7f5;--muted:#a6a6a6;--border:#303030;color-scheme:dark;font-family:'Be Vietnam Pro',sans-serif;color:var(--white);background:var(--bg)}
 *{box-sizing:border-box}body{margin:0;min-width:320px;overflow-x:hidden}button,a,summary{-webkit-tap-highlight-color:transparent}button{font:inherit;cursor:pointer}button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #fff;outline-offset:5px}button:disabled{cursor:wait}.icon{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.svg-defs{position:absolute;width:0;height:0;overflow:hidden}.background-stripes{position:absolute;top:90px;left:0;width:100%;height:770px;overflow:hidden;pointer-events:none;z-index:-1;background:radial-gradient(ellipse at 28% 56%,#7d10151c,transparent 50%)}.background-stripes:before{content:'';position:absolute;right:-90px;top:-240px;width:480px;height:1100px;transform:rotate(29deg);border-left:1px solid #ffffff05;background:repeating-linear-gradient(90deg,transparent 0 80px,#ffffff02 80px 140px)}
 .topbar{height:91px;border-bottom:1px solid #ffffff12;display:flex;align-items:center;justify-content:space-between;padding:0 max(32px,calc((100vw - 1220px)/2));gap:24px;background:#101010e8}.brand{display:flex;align-items:center;gap:20px;text-decoration:none;color:var(--white)}.brand img{width:80px;height:49px;object-fit:contain}.brand span{font-family:'Barlow Condensed',sans-serif;font-weight:700;letter-spacing:2px;font-size:16px}.edition{display:flex;gap:12px;align-items:center;color:#9b9b9b;font-size:12px;font-weight:500;letter-spacing:2.5px}.edition-line{height:1px;width:28px;background:var(--red)}.sound-button{display:flex;align-items:center;gap:9px;background:transparent;color:#c4c4c4;border:1px solid var(--border);padding:10px 13px;border-radius:5px;font-size:12px;min-height:44px;transition:background .2s}.sound-button:hover{background:#262626}.sound-button .icon{width:19px;height:19px}.sound-button[aria-pressed=true]{color:#fff;border-color:#e21d2a80}
-main{max-width:1150px;margin:auto;padding:37px 24px 0}.intro{text-align:center}.eyebrow{font-size:11px;font-weight:600;letter-spacing:2px;color:#9b9b9b;margin:0;line-height:1.5}.intro .eyebrow{display:flex;justify-content:center;align-items:center;gap:9px;color:#c1c1c1}.intro .eyebrow>span{width:19px;height:3px;background:var(--red);transform:skew(-25deg)}h1{font-family:'Barlow Condensed','Be Vietnam Pro',sans-serif;font-size:clamp(40px,5.8vw,72px);font-weight:800;line-height:1.04;letter-spacing:.2px;margin:12px 0 12px}h1 em{color:var(--red);font-style:italic;display:inline-block}.intro-text{color:var(--muted);font-size:14px;margin:0}.game-layout{display:grid;grid-template-columns:minmax(0,1.18fr) minmax(0,1fr);gap:56px;align-items:center;padding-top:16px}.play-area{display:flex;flex-direction:column;align-items:center;min-width:0}.wheel-stage{position:relative;display:flex;align-items:center;justify-content:center;width:100%;aspect-ratio:1/1.035;max-width:535px}.orbit{position:absolute;width:98%;aspect-ratio:1;border:1px solid #ffffff06;border-radius:50%;pointer-events:none}.orbit-two{width:91%;border-style:dashed;border-color:#ffffff09}.stage-label{position:absolute;left:0;top:50%;font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:3px;color:#6b3437;writing-mode:vertical-rl;transform:rotate(180deg)}.wheel-frame{width:87%;aspect-ratio:1;position:relative;isolation:isolate;border-radius:50%;padding:16px;background:linear-gradient(135deg,#575757,#1b1b1b 37%,#424242 55%,#121212 78%,#5b5b5b);box-shadow:0 0 0 1px #636363,0 0 0 7px #191919,0 0 0 8px #343434,0 20px 45px #0008}.wheel-disc{width:100%;height:100%;border-radius:50%;overflow:hidden;box-shadow:0 0 0 2px #090909;will-change:transform}.wheel-disc svg{display:block;width:100%;height:100%}.rim-lights{position:absolute;inset:0;pointer-events:none;z-index:2}.rim-light{position:absolute;width:4px;height:4px;margin:-2px;border-radius:50%;background:#ffe9cf;box-shadow:0 0 5px #ffd8b599;opacity:.85}.is-spinning .rim-light:nth-child(2n){animation:blink .35s infinite alternate}.is-spinning .rim-light:nth-child(2n+1){animation:blink .35s .2s infinite alternate}.wheel-hub{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:24%;aspect-ratio:1;z-index:3;display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:50%;background:radial-gradient(circle at 40% 25%,#303030,#111 65%);border:6px solid #d7d7d7;box-shadow:0 0 0 3px #393939,0 5px 15px #0007}.wheel-hub>span{font:italic 800 clamp(26px,4vw,47px)/1 'Barlow Condensed',sans-serif;letter-spacing:-3px;transform:translateX(-2px)}.wheel-hub>small{font:600 7px/2 'Be Vietnam Pro',sans-serif;letter-spacing:1px;color:#c7c7c7}.pointer{position:absolute;left:50%;top:-15px;transform:translateX(-50%);width:38px;height:58px;z-index:5;filter:drop-shadow(0 4px 4px #0009);background:#f9f7f1;clip-path:polygon(12% 0,88% 0,100% 32%,50% 100%,0 32%)}.pointer>span{position:absolute;inset:5px;background:var(--red);clip-path:polygon(8% 0,92% 0,100% 27%,50% 100%,0 27%)}.wheel-shadow{position:absolute;bottom:3%;width:67%;height:10px;border-radius:50%;background:#000;filter:blur(9px)}
+main{max-width:1150px;margin:auto;padding:37px 24px 0}.intro{text-align:center}.eyebrow{font-size:11px;font-weight:600;letter-spacing:2px;color:#9b9b9b;margin:0;line-height:1.5}.intro .eyebrow{display:flex;justify-content:center;align-items:center;gap:9px;color:#c1c1c1}.intro .eyebrow>span{width:19px;height:3px;background:var(--red);transform:skew(-25deg)}h1{font-family:'Barlow Condensed','Be Vietnam Pro',sans-serif;font-size:clamp(40px,5.8vw,72px);font-weight:800;line-height:1.04;letter-spacing:.2px;margin:12px 0 12px}h1 em{color:var(--red);font-style:italic;display:inline-block}.intro-text{color:var(--muted);font-size:14px;margin:0}.game-layout{display:grid;grid-template-columns:minmax(0,1.18fr) minmax(0,1fr);gap:56px;align-items:center;padding-top:16px}.play-area{display:flex;flex-direction:column;align-items:center;min-width:0}.wheel-stage{position:relative;display:flex;align-items:center;justify-content:center;width:100%;aspect-ratio:1/1.035;max-width:535px}.orbit{position:absolute;width:98%;aspect-ratio:1;border:1px solid #ffffff06;border-radius:50%;pointer-events:none}.orbit-two{width:91%;border-style:dashed;border-color:#ffffff09}.stage-label{position:absolute;left:0;top:50%;font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:3px;color:#6b3437;writing-mode:vertical-rl;transform:rotate(180deg)}.wheel-frame{width:87%;aspect-ratio:1;position:relative;isolation:isolate;border-radius:50%;padding:16px;background:linear-gradient(135deg,#575757,#1b1b1b 37%,#424242 55%,#121212 78%,#5b5b5b);box-shadow:0 0 0 1px #636363,0 0 0 7px #191919,0 0 0 8px #343434,0 20px 45px #0008}.wheel-disc{width:100%;height:100%;border-radius:50%;overflow:hidden;box-shadow:0 0 0 2px #090909;will-change:transform}.wheel-disc>svg{display:block;width:100%;height:100%}.rim-lights{position:absolute;inset:0;pointer-events:none;z-index:2}.rim-light{position:absolute;width:4px;height:4px;margin:-2px;border-radius:50%;background:#ffe9cf;box-shadow:0 0 5px #ffd8b599;opacity:.85}.is-spinning .rim-light:nth-child(2n){animation:blink .35s infinite alternate}.is-spinning .rim-light:nth-child(2n+1){animation:blink .35s .2s infinite alternate}.wheel-hub{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:24%;aspect-ratio:1;z-index:3;display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:50%;background:radial-gradient(circle at 40% 25%,#303030,#111 65%);border:6px solid #d7d7d7;box-shadow:0 0 0 3px #393939,0 5px 15px #0007}.wheel-hub>span{font:italic 800 clamp(26px,4vw,47px)/1 'Barlow Condensed',sans-serif;letter-spacing:-3px;transform:translateX(-2px)}.wheel-hub>small{font:600 7px/2 'Be Vietnam Pro',sans-serif;letter-spacing:1px;color:#c7c7c7}.pointer{position:absolute;left:50%;top:-15px;transform:translateX(-50%);width:38px;height:58px;z-index:5;filter:drop-shadow(0 4px 4px #0009);background:#f9f7f1;clip-path:polygon(12% 0,88% 0,100% 32%,50% 100%,0 32%)}.pointer>span{position:absolute;inset:5px;background:var(--red);clip-path:polygon(8% 0,92% 0,100% 27%,50% 100%,0 27%)}.wheel-shadow{position:absolute;bottom:3%;width:67%;height:10px;border-radius:50%;background:#000;filter:blur(9px)}
 .spin-button{display:flex;align-items:center;justify-content:center;gap:13px;border:1px solid #f34048;border-radius:5px;background:var(--red);color:#fff;min-height:58px;font-size:17px;font-weight:800;letter-spacing:1.2px;padding:14px 27px;box-shadow:0 8px 24px #e21d2a20;transition:background .2s,transform .2s,box-shadow .2s}.play-area>.spin-button{width:75%;max-width:356px;margin-top:0}.spin-button:hover{background:#f12c37;box-shadow:0 8px 35px #e21d2a40;transform:translateY(-2px)}.spin-button:active{transform:translateY(0)}.spin-button:disabled{background:#a91b24;border-color:#a91b24;transform:none;box-shadow:none}.spin-button:disabled .icon{animation:spin 1.2s linear infinite}.button-slashes{margin-left:auto;opacity:.55;font-style:italic;font-weight:500}.spin-hint{font-size:12px;color:#9d9d9d;min-height:20px;text-align:center;margin:14px 0 0;line-height:1.7}
 .prize-board{margin-top:12px;border:1px solid #343434;border-radius:9px;background:linear-gradient(140deg,#1e1e1e,#161616);overflow:hidden;box-shadow:0 14px 45px #0002}.board-heading{padding:24px 24px 22px;display:flex;gap:13px;align-items:center;border-bottom:1px solid #ffffff09}.board-icon{color:var(--red);display:grid;place-items:center;width:44px;height:44px;flex-shrink:0;border:1px solid #e21d2a40;border-radius:7px;background:#e21d2a09}.board-heading .eyebrow{font-size:9px;letter-spacing:1.7px}.board-heading h2{font:700 28px/1.1 'Barlow Condensed','Be Vietnam Pro',sans-serif;margin:6px 0 0;letter-spacing:.5px}.prize-count{margin-left:auto;font:600 44px/1 'Barlow Condensed',sans-serif;color:#414141}.prize-list{padding:4px 24px}.prize-row{display:flex;align-items:center;gap:14px;min-height:65px;border-bottom:1px solid #ffffff09;transition:background .3s,border-color .3s;padding:11px 0}.prize-row:last-child{border-bottom:0}.prize-row .prize-icon{width:38px;height:38px;display:grid;place-items:center;border-radius:6px;background:#292929;color:#c9c9c9;flex-shrink:0}.prize-icon .icon{width:21px;height:21px}.prize-name{font-size:13px;font-weight:500;line-height:1.6;flex:1}.prize-name small{display:block;color:#9b9b9b;font-size:11px;font-weight:400}.prize-odds{font-size:12px;font-weight:600;background:#292929;border:1px solid #383838;padding:5px 8px;border-radius:4px;flex-shrink:0;min-width:43px;text-align:center}.prize-row.voucher .prize-odds{color:#ffb4b8;border-color:#e21d2a50;background:#e21d2a16}.prize-row.is-winner{background:#e21d2a10;border-color:#e21d2a80}.prize-row.is-winner .prize-icon{color:#fff;background:var(--red)}.prize-row.zero .prize-name,.prize-row.zero .prize-icon{color:#929292}.board-note{border-top:1px solid #ffffff09;padding:15px 24px;display:flex;gap:9px;align-items:flex-start;background:#12121266}.board-note p{font-size:11px;color:#aaa;line-height:1.8;margin:0}.note-mark{display:grid;place-items:center;width:14px;height:14px;flex-shrink:0;border:1px solid #777;border-radius:50%;font-family:serif;font-size:10px;margin-top:3px;color:#aaa}
 .how-to{max-width:1010px;margin:31px auto 0;border-top:1px solid #ffffff0f;border-bottom:1px solid #ffffff0f}.how-to summary{cursor:pointer;padding:17px 0;font-size:12px;color:#aaa;display:flex;align-items:center;justify-content:center;gap:13px;list-style:none;min-height:48px}.how-to summary::-webkit-details-marker{display:none}.how-to summary>span{color:#ddd;font-size:18px;font-weight:300}.how-to[open] summary>span{transform:rotate(45deg)}.how-to>div{max-width:760px;margin:0 auto 22px;font-size:13px;color:#aaa;line-height:1.9;padding:0 12px}.how-to p{margin-top:0}footer{display:flex;justify-content:space-between;max-width:1150px;margin:24px auto;padding:0 24px 12px;color:#717171;font-size:10px;letter-spacing:1.3px;gap:15px}footer b{color:var(--red);margin:0 9px}.demo-label{letter-spacing:1px;font-size:9px}
 .result-dialog{background:#1b1b1b;border:1px solid #555;border-top:4px solid var(--red);border-radius:12px;color:#fff;width:min(460px,calc(100% - 32px));padding:38px 28px 28px;text-align:center;box-shadow:0 30px 100px #0008}.result-dialog::backdrop{background:#000b;backdrop-filter:blur(7px)}.dialog-close{position:absolute;right:8px;top:8px;border:0;background:none;color:#aaa;width:44px;height:44px;display:grid;place-items:center}.dialog-close:hover{color:#fff}.result-mark{display:grid;place-items:center;color:#fff;width:78px;height:78px;margin:0 auto 24px;border-radius:50%;background:var(--red);box-shadow:0 0 0 8px #e21d2a13}.result-mark>.icon{width:36px;height:36px}.result-dialog .eyebrow{font-size:9px;letter-spacing:1.5px}.result-dialog h2{font:800 43px/1.1 'Barlow Condensed',sans-serif;margin:11px 0 18px}.result-lead{color:#aaa;font-size:13px;margin:0}.result-prize{font-size:23px;font-weight:800;line-height:1.5;color:#fff;margin:9px 0 15px}.result-dialog #resultDescription{font-size:13px;line-height:1.8;color:#bbb}.result-disclaimer{font-size:10px;color:#888;margin:22px 0}.result-dialog>.spin-button{width:100%;font-size:14px;min-height:52px}.confetti{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:10}.confetti-piece{position:absolute;top:-30px;width:7px;height:14px;background:var(--red);animation:confetti-fall 2.8s ease-in forwards}.confetti-piece:nth-child(3n){background:#fff}.confetti-piece:nth-child(3n+1){background:#b8b8b8}.confetti-piece:nth-child(4n){width:5px;height:5px}
+.wheel-viewport{position:absolute;inset:16px;overflow:hidden;border-radius:50%;isolation:isolate}.wheel-disc{position:absolute;inset:0;transform-origin:50% 50%}.wheel-hub{height:24%}.spin-hint{width:100%;padding-inline:8px;min-height:3.4em}.result-dialog{max-height:calc(100dvh - 32px);overflow-y:auto}.result-dialog>.spin-button{line-height:1.6;letter-spacing:.3px}
 .spin-button.is-used{cursor:default;background:#303030;border-color:#444;color:#c5c5c5;font-size:13px;letter-spacing:.3px}.spin-button.is-used .icon{animation:none}.spin-button.is-used .button-slashes{display:none}
 @keyframes spin{to{transform:rotate(360deg)}}@keyframes blink{to{opacity:.25}}@keyframes confetti-fall{to{transform:translate(var(--drift),105vh) rotate(700deg);opacity:0}}
 @media(min-width:1400px){main{padding-top:44px}.game-layout{padding-top:22px}}
 @media(max-width:900px){.game-layout{gap:25px}.board-heading{padding:20px 18px}.prize-list{padding:4px 18px}.board-note{padding:14px 18px}.board-heading h2{font-size:24px}.prize-name{font-size:12px}.prize-count{font-size:36px}.prize-row{gap:10px}.wheel-frame{width:87%;padding:13px}.board-heading .eyebrow{letter-spacing:1px}.brand span{display:none}.wheel-hub{border-width:4px}.wheel-hub>small{font-size:5px}}
 @media(max-width:650px){.topbar{height:72px;padding:0 20px;gap:12px}.brand img{width:66px;height:40px}.edition{font-size:9px;letter-spacing:1.3px;gap:7px}.edition-line{width:15px}.sound-button{padding:10px;border-radius:50%;width:44px;justify-content:center}.sound-button span{display:none}main{padding:29px 18px 0}.intro .eyebrow{font-size:9px;letter-spacing:1.4px}h1{font-size:clamp(38px,9.5vw,60px);margin:11px 0}.intro-text{font-size:12px}.game-layout{grid-template-columns:minmax(0,1fr);gap:29px;padding-top:12px}.wheel-stage{max-width:415px;aspect-ratio:1/1.06}.stage-label{font-size:9px;letter-spacing:2px;left:0}.wheel-frame{width:86%;padding:12px}.wheel-hub>span{font-size:36px}.wheel-hub>small{font-size:6px}.pointer{width:30px;height:47px;top:-12px}.rim-light{width:3px;height:3px}.play-area>.spin-button{width:86%;max-width:365px;min-height:56px;font-size:16px}.spin-hint{font-size:11px;margin-top:12px}.prize-board{margin-top:0;max-width:460px;width:100%;justify-self:center}.board-heading{padding:21px 20px}.board-heading h2{font-size:27px}.prize-list{padding:4px 20px}.prize-row{min-height:64px;gap:13px}.prize-name{font-size:13px}.board-heading .eyebrow{font-size:9px}.board-note{padding:14px 20px}.how-to{margin-top:24px}.how-to summary{font-size:11px}.how-to>div{font-size:12px}footer{padding:0 18px;font-size:9px;margin:22px auto;letter-spacing:.6px}.demo-label{font-size:8px}.background-stripes{height:1100px}.result-dialog h2{font-size:38px}}
+@media(max-width:900px){.wheel-viewport{inset:13px}}
+@media(max-width:650px){.wheel-viewport{inset:12px}.wheel-hub>span{font-size:clamp(24px,8vw,36px)}.spin-button.is-used{font-size:12px;letter-spacing:0}.result-dialog{padding-inline:22px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
   
@@ -47,7 +50,7 @@ main{max-width:1150px;margin:auto;padding:37px 24px 0}.intro{text-align:center}.
   <header class="topbar">
     <a class="brand" href="https://ls2.vn/" target="_blank" rel="noopener noreferrer" aria-label="Website LS2 Việt Nam"><img src="data:image/jpeg;base64,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" width="80" height="49" alt="LS2 Helmets"><span>ALWAYS AHEAD.</span></a>
     <div class="edition"><span class="edition-line"></span> RIDER REWARDS</div>
-    <button class="sound-button" id="soundButton" type="button" aria-label="Bật âm thanh" aria-pressed="false"><svg class="icon"><use href="#icon-muted"/></svg><span>Âm thanh</span></button>
+    <button class="sound-button" id="soundButton" type="button" aria-label="Tắt nhạc" aria-pressed="true" title="Nhạc nền sẽ phát khi bạn chạm vào trò chơi"><svg class="icon"><use href="#icon-sound"/></svg><span>Nhạc nền</span></button>
   </header>
 
   <main>
@@ -64,7 +67,7 @@ main{max-width:1150px;margin:auto;padding:37px 24px 0}.intro{text-align:center}.
           <span class="stage-label" aria-hidden="true">SPIN TO WIN</span>
           <div class="wheel-frame">
             <div class="rim-lights" id="rimLights" aria-hidden="true"></div>
-            <div class="wheel-disc" id="wheelDisc"><svg id="wheelSvg" viewBox="0 0 500 500" role="img" aria-label="6 ô: chai vệ sinh buồng đốt, khăn ninja, bộ 5 khăn đa năng, ống tay, voucher 50%, may mắn lần sau"></svg></div>
+            <div class="wheel-viewport"><div class="wheel-disc" id="wheelDisc"><svg id="wheelSvg" viewBox="0 0 500 500" role="img" aria-label="6 ô: chai vệ sinh buồng đốt, khăn ninja, bộ 5 khăn đa năng, ống tay, voucher 50%, may mắn lần sau"></svg></div></div>
             <div class="wheel-hub" aria-hidden="true"><span>LS2</span><small>ALWAYS AHEAD</small></div>
             <div class="pointer" aria-hidden="true"><span></span></div>
           </div>
@@ -128,6 +131,95 @@ function randomUnit() {
   return value[0] / 4294967296;
 }
 
+// Original upbeat arcade loop. No downloads or third-party audio files.
+class PartyMusic {
+  constructor(context) {
+    this.context = context;
+    this.output = context.createGain();
+    this.output.gain.value = 0;
+    this.output.connect(context.destination);
+    this.timer = null;
+    this.step = 0;
+    this.nextTime = 0;
+    this.stepLength = 60 / 132 / 2;
+    this.noise = context.createBuffer(1, context.sampleRate * .12, context.sampleRate);
+    const data = this.noise.getChannelData(0);
+    for (let i = 0; i < data.length; i++) data[i] = Math.random() * 2 - 1;
+  }
+
+  tone(midi, time, duration, level, type = 'triangle') {
+    const oscillator = this.context.createOscillator();
+    const envelope = this.context.createGain();
+    oscillator.type = type;
+    oscillator.frequency.value = 440 * 2 ** ((midi - 69) / 12);
+    envelope.gain.setValueAtTime(0, time);
+    envelope.gain.linearRampToValueAtTime(level, time + .008);
+    envelope.gain.exponentialRampToValueAtTime(.0001, time + duration);
+    oscillator.connect(envelope);
+    envelope.connect(this.output);
+    oscillator.onended = () => { oscillator.disconnect(); envelope.disconnect(); };
+    oscillator.start(time);
+    oscillator.stop(time + duration + .02);
+  }
+
+  percussion(time, strong) {
+    const noise = this.context.createBufferSource();
+    const filter = this.context.createBiquadFilter();
+    const envelope = this.context.createGain();
+    noise.buffer = this.noise;
+    filter.type = 'highpass';
+    filter.frequency.value = strong ? 1800 : 6500;
+    envelope.gain.setValueAtTime(strong ? .14 : .055, time);
+    envelope.gain.exponentialRampToValueAtTime(.0001, time + (strong ? .09 : .035));
+    noise.connect(filter); filter.connect(envelope); envelope.connect(this.output);
+    noise.onended = () => { noise.disconnect(); filter.disconnect(); envelope.disconnect(); };
+    noise.start(time); noise.stop(time + .12);
+  }
+
+  schedule() {
+    const melody = [76, null, 79, 81, 79, 76, 74, null, 72, 76, 79, null, 81, 79, 76, null,
+      77, null, 81, 84, 81, 79, 77, null, 74, 77, 79, null, 83, 81, 79, null];
+    const roots = [48, 45, 53, 55];
+    while (this.nextTime < this.context.currentTime + .15) {
+      const step = this.step % 32;
+      const root = roots[Math.floor(step / 8)];
+      if (melody[step] !== null) this.tone(melody[step], this.nextTime, .19, .095);
+      if (step % 2 === 0) {
+        this.tone(root + (step % 4 === 2 ? 7 : 0), this.nextTime, .28, .14);
+        // Short low-frequency beat, beneath the melody.
+        const kick = this.context.createOscillator();
+        const envelope = this.context.createGain();
+        kick.frequency.setValueAtTime(120, this.nextTime);
+        kick.frequency.exponentialRampToValueAtTime(45, this.nextTime + .12);
+        envelope.gain.setValueAtTime(.23, this.nextTime);
+        envelope.gain.exponentialRampToValueAtTime(.0001, this.nextTime + .15);
+        kick.connect(envelope); envelope.connect(this.output);
+        kick.onended = () => { kick.disconnect(); envelope.disconnect(); };
+        kick.start(this.nextTime); kick.stop(this.nextTime + .16);
+      }
+      this.percussion(this.nextTime, step % 4 === 2);
+      this.step++;
+      this.nextTime += this.stepLength;
+    }
+  }
+
+  start() {
+    if (this.timer !== null || this.context.state !== 'running') return;
+    this.output.gain.cancelScheduledValues(this.context.currentTime);
+    this.output.gain.setTargetAtTime(.45, this.context.currentTime, .06);
+    this.nextTime = this.context.currentTime + .04;
+    this.schedule();
+    this.timer = setInterval(() => this.schedule(), 50);
+  }
+
+  stop() {
+    clearInterval(this.timer);
+    this.timer = null;
+    this.output.gain.cancelScheduledValues(this.context.currentTime);
+    this.output.gain.setTargetAtTime(0, this.context.currentTime, .025);
+  }
+}
+
 
 const $ = selector => document.querySelector(selector);
 const disc = $('#wheelDisc');
@@ -141,8 +233,9 @@ const NS = 'http://www.w3.org/2000/svg';
 let rotation = 0;
 let spinning = false;
 let hasSpun = false;
-let soundEnabled = false;
+let soundEnabled = true;
 let audio;
+let music;
 
 function svgElement(tag, attributes, parent) {
   const node = document.createElementNS(NS, tag);
@@ -192,19 +285,50 @@ function beep(frequency = 650, length = .035, gain = .028) {
   oscillator.stop(audio.currentTime + length);
 }
 
+async function startAudio() {
+  if (!soundEnabled || document.hidden) return;
+  if (!audio) {
+    audio = new (window.AudioContext || window.webkitAudioContext)();
+    music = new PartyMusic(audio);
+  }
+  await audio.resume();
+  if (soundEnabled && !document.hidden) {
+    music.start();
+    $('#soundButton').title = 'Nhạc nền đang phát · Nhấn để tắt';
+  }
+}
+
 $('#soundButton').addEventListener('click', async () => {
   try {
-    if (!audio) audio = new (window.AudioContext || window.webkitAudioContext)();
-    await audio.resume();
     soundEnabled = !soundEnabled;
+    if (soundEnabled) await startAudio();
+    else {
+      music?.stop();
+      $('#soundButton').title = 'Nhấn để bật nhạc nền';
+    }
     $('#soundButton').setAttribute('aria-pressed', String(soundEnabled));
-    $('#soundButton').setAttribute('aria-label', soundEnabled ? 'Tắt âm thanh' : 'Bật âm thanh');
+    $('#soundButton').setAttribute('aria-label', soundEnabled ? 'Tắt nhạc' : 'Bật nhạc');
     $('#soundButton use').setAttribute('href', soundEnabled ? '#icon-sound' : '#icon-muted');
     beep();
   } catch {
     status.textContent = 'Trình duyệt không hỗ trợ âm thanh. Bạn vẫn có thể quay.';
   }
 });
+
+// Unlock mobile audio on the first real interaction, including the spin button.
+document.addEventListener('pointerdown', event => {
+  if (event.target.closest('#soundButton')) return;
+  startAudio().catch(() => {});
+});
+document.addEventListener('keydown', event => {
+  if (['Enter', ' '].includes(event.key) && !event.target.closest('#soundButton')) startAudio().catch(() => {});
+});
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) music?.stop();
+  else if (audio) startAudio().catch(() => {});
+});
+window.addEventListener('pagehide', () => music?.stop());
+window.addEventListener('pageshow', () => { if (audio) startAudio().catch(() => {}); });
 
 function celebrate() {
   if (reducedMotion.matches) return;
@@ -231,7 +355,8 @@ async function spin() {
   document.querySelectorAll('.is-winner').forEach(row => row.classList.remove('is-winner'));
   let tickTimer;
   try {
-    if (soundEnabled && audio) await audio.resume();
+    // Audio support must never prevent a customer from using their spin.
+    startAudio().catch(() => {});
     const index = selectPrize(randomUnit());
     const nextRotation = targetRotation(rotation, index, (randomUnit() - .5) * 32);
     const animation = disc.animate([{ transform: `rotate(${rotation}deg)` }, { transform: `rotate(${nextRotation}deg)` }], { duration: reducedMotion.matches ? 150 : 5600, easing: 'cubic-bezier(.14,.65,.13,1)', fill: 'forwards' });
@@ -257,7 +382,7 @@ async function spin() {
     $('#resultIcon use').setAttribute('href', `#icon-${prize.icon}`);
     status.textContent = `Bạn đã quay trúng: ${prize.name}. Tải lại trang để có lượt quay mới.`;
     dialog.showModal();
-    $('#resultDone').focus();
+    $('#resultDone').focus({ preventScroll: true });
     celebrate();
     [660, 830, 990].forEach((frequency, i) => setTimeout(() => beep(frequency, .15, .04), i * 140));
   } catch {

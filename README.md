@@ -8,7 +8,9 @@ Game vòng quay phong cách LS2, tối ưu cho điện thoại và máy tính. F
 - 1 lượt quay mỗi lần tải trang; tải lại trang để nhận lượt mới.
 - Không hiển thị xác suất trên giao diện khách hàng.
 - CTA kết quả: “Gặp Nhân viên dễ thương nhận thưởng!”.
-- Âm thanh tùy chọn, hỗ trợ bàn phím và giảm chuyển động.
+- Nhạc nền arcade vui nhộn 132 BPM, melody, bass, trống và hiệu ứng trúng quà. Nhạc bắt đầu sau thao tác đầu tiên, có nút bật/tắt và tự dừng khi chuyển tab.
+- Khung quay cố định để đĩa xoay không tạo tràn ngang hoặc lệch tâm trên mobile.
+- Hỗ trợ bàn phím và giảm chuyển động.
 
 ## Vận hành
 
